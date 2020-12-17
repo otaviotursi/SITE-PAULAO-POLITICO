@@ -1,0 +1,247 @@
+
+/* Configuração padrão da página
+-------------------------------*/
+body, html {
+    margin: 0;
+    font: 16px "Lato", sans-serif;
+    color: #777;
+    height: 100%;
+}
+
+.conteudo {
+    /* cor das letras, fica cinza se descomentar a linha abaixo */
+    /* color: #777; */
+    background-color: white;
+    text-align: justify;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: #111;
+    text-align: center;
+}
+
+p{
+    margin-bottom: 20px;
+}
+
+.caixa1 {
+    height: 200px;
+    background-image: url('../imagens/paulaoEstadio.jp2');
+}
+
+.caixa2, .caixa3, .caixa4 {
+    height: 200px;
+    background-image: url('../imagens/Reforma-do-Boulevard-Central-Barueri.jp2');
+}
+
+/* Efeito Parallax
+-------------------------------*/
+.caixa1, .caixa2, .caixa3, .caixa4 {
+    position: relative;
+    height: 100%;
+    /* opacity: 0.7; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+}
+
+.bg-nav-resp {
+
+    background: #006666;
+
+}
+.navbar-custom{
+    background-color:#006666;
+}
+
+/* menu caixa1*/
+.navbar-custom a {
+    padding: 15px;
+    color: #FFCC33;
+    font-size: 23px;
+    margin-right: 5px;
+}
+.navbar-custom a:hover {
+    color: #FFCC33;
+    font-size: 23px;
+}
+
+
+.numero-eleicao{
+
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 23px;
+    margin-right: 5px;
+
+}
+class pad{
+    padding: 5px;
+}
+i{
+    font-size: 35px;
+
+}
+
+/* titulo demais caixas */
+.conteudo-titulo span.titulo {
+    color: #FFCC33;
+    background: #006666;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+}
+
+/* icones da caixa1 */
+.menu-icons-rodape li.titulo {
+    background-color: #FFFFFF;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    list-style: none;
+}
+
+.rodape{
+
+    text-align: center;
+}
+
+.links-uteis-rodape li{
+    text-align: center;
+    list-style: none;
+    color: none;
+    display: inline-block;
+
+}
+#desenvolvedor a{
+    list-style: none;
+    color: #FFCC33;
+}
+
+#button-back-top{
+   width: 50px;
+   height: 50px;
+   background: #FFCC33;
+   position: fixed;
+   right: 10px;
+   bottom: 10px;
+   border-radius: 25px;
+   text-align: center;
+   border: none;
+}
+
+#button-back-top:hover{
+    text-decoration:none;
+    background: #006666;
+}
+
+
+@media (min-width: 769px){
+    .conteudo{
+        padding: 50px 80px;
+    }
+
+    .conteudo-titulo span.titulo{
+        padding: 18px;
+    }
+    
+    .icone-menu-tamanho{
+        width:50px;
+        height:50px;
+    }
+        
+    /* titulo demais caixas */
+    .conteudo-titulo {
+
+        top: 78.5px;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        
+    }
+    .caixa1 {
+        background-image: url('../imagens/paulaoEstadio.jp2');
+    }
+
+    .caixa2, .caixa3, .caixa4 {
+        height: 200px;
+        background-image: url('../imagens/paulaoEstadio.jp2');
+
+    }
+
+    .espacamento{
+        padding:  100px 0 100px 0;
+    
+    }
+
+    /* texto de vereador */
+    .textos-entrada{
+        font-weight: bold;
+        font-size: 50px;
+        color: #FFFFFF;
+        margin-left: 20px;
+        top: 50%;
+        position: absolute;
+        /* background: rgb(228, 228, 228, 0.6); */
+    }
+}
+
+@media (max-width: 768px){
+
+
+    .icone-menu-tamanho{
+        width: 30px;
+        height: 30px;
+    }
+
+    .conteudo{
+        padding: 15px;
+    }
+
+     /* titulo demais caixas */
+     .conteudo-titulo {
+        top: 50px;
+        position: absolute;
+        /* left: 0; */
+        width: 100%;
+        text-align: center;
+        /* display: block; */
+        
+    }
+
+    .conteudo-titulo span.titulo{
+        padding: 1.5%;
+    }
+        
+    .espacamento{
+        padding:  50px 0 50px 0;
+
+    }
+
+    /* texto de vereador */
+    .textos-entrada{
+        font-weight: bold;
+        font-size: 16px;
+        color: #FFFFFF;
+        margin-left: 20px;
+        bottom: 2px;
+        position: absolute;
+    }
+
+    .caixa1 {
+        height: 350px;
+        background-image: url('../imagens/paulaoEstadio.jp2');
+
+    }
+
+    .caixa2, .caixa3, .caixa4 {
+        height: 150px;
+        /* background-image: url('../imagens/casas.svg'); */
+        /* background: url('../imagens/estrada.svg') repeat-x; */
+        background: rgb(255, 255, 255);
+    }
+}
